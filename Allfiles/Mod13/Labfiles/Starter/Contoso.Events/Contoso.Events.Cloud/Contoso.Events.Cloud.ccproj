@@ -68,9 +68,6 @@
     <DiagnosticsConfiguration Include="Contoso.Events.WebContent\diagnostics.wadcfgx" />
     <DiagnosticsConfiguration Include="Contoso.Events.WorkerContent\diagnostics.wadcfgx" />
   </ItemGroup>
-  <ItemGroup>
-    <PublishProfile Include="Profiles\cs20532manesh2Production.azurePubxml" />
-  </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
