@@ -1,6 +1,5 @@
-﻿using Microsoft.ServiceBus;
+﻿using Microsoft.Azure;
 using Microsoft.ServiceBus.Messaging;
-using Microsoft.WindowsAzure;
 
 namespace Contoso.Events.Worker
 {
