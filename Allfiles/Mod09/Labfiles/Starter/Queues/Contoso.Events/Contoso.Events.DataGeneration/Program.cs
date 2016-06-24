@@ -14,6 +14,7 @@ namespace Contoso.Events.Data.Generation
     {
         static void Main(string[] args)
         {
+            SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
             var storageAccount = CloudStorageAccount.DevelopmentStorageAccount;
 
             var tableClient = storageAccount.CreateCloudTableClient();
