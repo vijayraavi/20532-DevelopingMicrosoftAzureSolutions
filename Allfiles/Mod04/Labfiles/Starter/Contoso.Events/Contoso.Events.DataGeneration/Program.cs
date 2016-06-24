@@ -10,6 +10,8 @@ namespace Contoso.Events.DataGeneration
     {
         static void Main(string[] args)
         {
+            SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
+
             Database.SetInitializer<EventsContext>(new DropCreateDatabaseAlways<EventsContext>());
             using (EventsContext context = new EventsContext())
             {
