@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Contoso.Events.Lodging")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Hewlett-Packard")]
 [assembly: AssemblyProduct("Contoso.Events.Lodging")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("864213e5-e7c4-495a-bf19-696ffdc5991c")]
+[assembly: Guid("8e67a5c2-aef7-4cc4-bb0b-199bab2364e1")]
 
 // Version information for an assembly consists of the following four values:
 //
