@@ -1,4 +1,4 @@
-﻿using Microsoft.WindowsAzure;
+﻿using Microsoft.Azure;
 using Microsoft.WindowsAzure.Storage;
 
 namespace Contoso.Events.Worker

@@ -83,7 +83,7 @@ namespace Contoso.Events.Worker
         public override bool OnStart()
         {
             ServicePointManager.DefaultConnectionLimit = 12;
-
+            SqlServerTypes.Utilities.LoadNativeAssemblies(AppDomain.CurrentDomain.BaseDirectory);
             return base.OnStart();
         }
     }

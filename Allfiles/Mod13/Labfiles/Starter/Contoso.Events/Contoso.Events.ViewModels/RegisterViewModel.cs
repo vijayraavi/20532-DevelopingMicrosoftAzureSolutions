@@ -1,7 +1,7 @@
 ﻿using Contoso.Events.Data;
 using Contoso.Events.Models;
 using Contoso.Events.ViewModels.Dynamic;
-using Microsoft.WindowsAzure;
+using Microsoft.Azure;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
 using System;

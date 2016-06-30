@@ -35,5 +35,22 @@ namespace Contoso.Events.Lodging.Client
             ILodgingService ch = cf.CreateChannel();
             return ch.GetHotels();
         }
+
+        private static IEnumerable<Hotel> GetHotelsFromRelay()
+        {
+            Uri serviceUri = ServiceBusEnvironment.CreateServiceUri("sb", "sb20532[Your Name]", "lodging");
+
+            ChannelFactory<ILodgingService> cf = new ChannelFactory<ILodgingService>(
+                new NetTcpRelayBinding(),
+                new EndpointAddress(serviceUri)
+            );
+
+            TransportClientEndpointBehavior endpointBehavior = new TransportClientEndpointBehavior();
+            endpointBehavior.TokenProvider = TokenProvider.CreateSharedAccessSignatureTokenProvider("RootManageSharedAccessKey", "<put your access key here>");
+            cf.Endpoint.EndpointBehaviors.Add(endpointBehavior);
+
+            ILodgingService ch = cf.CreateChannel();
+            return ch.GetHotels();
+        }
     }
 }

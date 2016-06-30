@@ -1,11 +1,5 @@
-﻿using Contoso.Events.Models;
-using Contoso.Events.ViewModels;
-using Microsoft.ServiceBus;
-using Newtonsoft.Json.Linq;
+﻿using Contoso.Events.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.ServiceModel;
 using System.Web.Mvc;
 
 namespace Contoso.Events.Web.Controllers
