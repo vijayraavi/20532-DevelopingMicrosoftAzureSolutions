@@ -1,18 +1,19 @@
 ﻿using Microsoft.ServiceBus;
 using Microsoft.ServiceBus.Messaging;
-using Microsoft.WindowsAzure;
+using Microsoft.Azure;
+using System.Configuration;
 
 namespace Contoso.Events.Worker
 {
-    /// TODO: Exercise 10.5: Retrieving Message from a Service Bus Queue 
+    
     public sealed class StorageBusQueueHelper : IQueueHelper<BrokeredMessage>
     {
         private readonly QueueClient _client;
 
         public StorageBusQueueHelper()
         {
-            string serviceBusConnectionString = CloudConfigurationManager.GetSetting("Microsoft.ServiceBus.ConnectionString");
-            string signInQueueName = CloudConfigurationManager.GetSetting("SignInQueueName");
+            string serviceBusConnectionString = ConfigurationManager.AppSettings["Microsoft.ServiceBus.ConnectionString"];
+            string signInQueueName = ConfigurationManager.AppSettings["SignInQueueName"];
             NamespaceManager namespaceManager = NamespaceManager.CreateFromConnectionString(serviceBusConnectionString);
 
             _client = QueueClient.CreateFromConnectionString(serviceBusConnectionString, signInQueueName);
