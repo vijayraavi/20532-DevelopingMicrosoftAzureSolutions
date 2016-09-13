@@ -2,9 +2,9 @@
 
 # Demo: Viewing a Resource Group Template
 
-1.  On the Start screen, click the down arrow to view all the applications, and then click **Microsoft Azure PowerShell**.
+1.  On the Start screen, click the down arrow to view all the applications, and then click **Windows PowerShell**.
 
-1.  Switch to the **Microsoft Azure PowerShell** console window.
+1.  Switch to the **Windows PowerShell** console window.
 
 1.  To switch to the **Azure Resource Manager** modules, type the following command in the console, and then press Enter:
 
@@ -50,7 +50,7 @@
 
 1.  On the taskbar, click the **File Explorer** icon.
 
-1.  In the Libraries window, go to **Allfiles (F):\\Mod11\\Demofiles**, and then view the content of the JSON file: **MSOpenTech.OracleDatabase12candWebLogicServer12cSE.0.2.9-preview.json**.
+1.  In the Libraries window, go to **Allfiles (F):\\Mod09\\Demofiles**, and then view the content of the JSON file: **MSOpenTech.OracleDatabase12candWebLogicServer12cSE.0.2.9-preview.json**.
 
 	> You can use either Visual Studio 2013 or Notepad to view the content of the JSON file.
 
