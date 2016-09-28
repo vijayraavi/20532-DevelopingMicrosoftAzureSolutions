@@ -272,7 +272,7 @@
 
 19. Double-click the **MicrosoftAzureStorageEmulator.msi** file to start the emulator.
 
-20. In the **Microsoft Azure Storage Emulator Setup** wizard, select the *checkbox* to **accept the terms in the License Agreement**.
+20. In the **Microsoft Azure Storage Emulator Setup** wizard, select the checkbox next to the **"I accept the terms in the License Agreement"** statement.
 
 21. Click the **Install** button to install the emulator.
 
