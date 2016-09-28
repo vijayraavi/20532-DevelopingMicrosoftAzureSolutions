@@ -32,9 +32,9 @@
 
 1. In the **Create virtual machine** blade that displays, perform the following steps:
 
-	a.  In the **Name** box, provide a value with the prefix **vm20532demo** followed by your name.
+	a.  Locate the **Basics** blade. In the **Name** box, provide a value with the prefix **vm20532demo** followed by your name.
 
-	b. In the **VM disk type** list, select the value **HDD**.
+	b.	In the **VM disk type** list, select the value **HDD**.
 
 	c.  In the **User Name** box, provide the value **Instructor**.
 
@@ -44,19 +44,19 @@
 
 	f. 	In the **Resource Group** section, locate the dialog box and enter **20532VirtualMachine** as the name of the *Resource Group*.
 
-	g.  Click **Pricing Tier**.
+	g.  Click the **Ok** button.
 
-	h.  In the **Recommend Pricing Tiers** blade, click **Browse All Pricing Tiers**.
+	h.  In the **Choose a size** blade, click **View all**.
 
-	i.  Select **A2 Standard**.
+	i.  Select the **A2 Standard** option.
 
-	j.  Click **Select**.
+	j.  Click the **Select** button.
 
-	k.  In the Recommended Pricing Tiers blade, click **Select**.
+	k.  In the **Settings** blade, click the **Ok** button.
 
-	l.  To create the virtual machine by using your specified configuration, click **Create**.
+	l.  To create the virtual machine using your specified configuration, click the **Ok** button in the **Summary** blade.
 
-1.  Select the newly created virtual machine from your Startboard.
+1.  Once the VM is created, select the newly created virtual machine from your Dashboard.
 
 1.  In the **vm20532demo[Your Name Here]** blade.
 
