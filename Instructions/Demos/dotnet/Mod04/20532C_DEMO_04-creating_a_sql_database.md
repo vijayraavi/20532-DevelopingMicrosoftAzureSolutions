@@ -16,7 +16,7 @@
 
 1.  At the top-left corner of the portal, click **New**.
 
-1.  In the **New** blade that displays, click **Data + Storage**.
+1.  In the **New** blade that displays, click **Databases**.
 
 1.  In the **Data + Storage** blade that displays, click **SQL Database**.
 
