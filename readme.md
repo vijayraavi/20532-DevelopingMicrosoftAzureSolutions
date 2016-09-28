@@ -1,7 +1,7 @@
 #20532C: Developing Microsoft Azure Solutions
 
 > - **Thinking of Contributing?** - Check our our [Contributor Guide](contributor_guide.md)
-- **Are you a MCT?** - Have a look at our [MCT Guide](mct_guide.md)
+- **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](mct_guide.md)
 - [Download Latest Student Handbook and AllFiles Content](https://github.com/MicrosoftLearning/20532-DevelopingMicrosoftAzureSolutions/releases/latest)
 
 ## What are we doing?
