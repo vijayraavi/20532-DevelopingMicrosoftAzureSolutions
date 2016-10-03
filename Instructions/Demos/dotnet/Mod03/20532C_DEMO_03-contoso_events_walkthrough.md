@@ -180,23 +180,9 @@
 
 1.	In the **LastName** box, provide the value **Horn**.
 
-1.	Click **Submit**.
+1.	Click the **Submit** button.
 
-1.	In Internet Explorer, locate and click the **Home – Contoso Events Administration** window.
-
-1.	Click **Go to Events List**.
-
-1.	Locate the same sales conference that you registered for in the previous step.
-
-1.	In the grid, click **Sign-In Sheet** next to the event’s name.
-
-1.	Every 30 seconds (or less), refresh the page to see if the Sign-in Sheet is generated.
-
-	>  When the box changes from blue to yellow and a hyperlink with the text Sign-In Sheet displays, it indicates that the Sign-in Sheet is generated.
-
-1.	Click the **Sign-In Sheet** hyperlink to download the Microsoft Word document.
-
-1.	To view the file, click **Open** in the download dialog box.
+1.	Click the **Go back to Events List** buton.
 
 1.	Close the **Internet Explorer** application.
 
