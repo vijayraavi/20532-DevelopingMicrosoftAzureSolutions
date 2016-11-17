@@ -8,10 +8,5 @@ Configuration Dev
       UserRole = "Administrators"
       IsEnabled = $false
     }
-    xIEESc DscIE
-    {
-      UserRole = "Users"
-      IsEnabled = $false
-    }
   }
 }
