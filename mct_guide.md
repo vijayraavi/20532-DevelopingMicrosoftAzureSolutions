@@ -1,5 +1,4 @@
-GitHub User Guide for MCTs
-==========================
+# GitHub User Guide for MCTs
 
 Cloud services, such as Microsoft Azure, are updated frequently. This leads to issues for Microsoft Certified Trainers (MCTs) when they teach courses, such as *20532: Developing Microsoft Azure Solutions* or *20533: Implementing Microsoft Azure Infrastructure Solutions*, because lab steps change frequently as the service changes. Due to the frequency of the changes and the fact that there may not be any notification when changes occur, it can be difficult for the course development team to rapidly identify and address any lab changes.
 
@@ -11,7 +10,7 @@ This user guide is for MCTs who are new to GitHub, and it provides steps for con
 
 **Note:** It is strongly recommended that MCTs and Partners access these materials and in turn, provide them separately to students. Pointing students directly to GitHub to access Lab steps as part of an ongoing class will require them to access yet another UI as part of the course, contributing to a confusing experience for the student. An explanation to the student regarding why they are receiving separate Lab instructions can highlight the nature of an always-changing cloud-based interface and platform. Microsoft Learning support for accessing files on GitHub and support for navigation of the GitHub site is limited to MCTs teaching this course only.
 
-### GitHub terminology
+## GitHub terminology
 
 GitHub introduces terminology that might be new to you, and the following list includes terms and concepts that this document uses. However, for a full list of GitHub terms, refer to the “GitHub Glossary” at <https://help.github.com/articles/GitHub-glossary/>.
 
@@ -39,189 +38,15 @@ GitHub introduces terminology that might be new to you, and the following list i
 
   *Collaborator*: This is a GitHub user that has permissions to add, delete, or change a repo’s content.
 
-<span id="quickstart" class="anchor"><span id="overview-microsoft-learnings-github-solu" class="anchor"></span></span>Overview of Microsoft Learning's GitHub solution for course labs
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Overview of Microsoft Learning's GitHub solution for course labs
 
-The Microsoft Learning team has created a solution that allows them to publish updated lab and lab answer keys (LAKs) and updated lab scripts regularly to GitHub. The solution also includes a script and tools that you can use to print labs and lab answer keys from Microsoft Word .docx files. However, if you want to use this solution, you must perform several steps the first time that you download and print lab files. A later section of this file details these steps, which include that you must:
-
-1.  Sign-up for a GitHub account.
-
-2.  Install the GitHub Desktop.
-
-3.  Install the prerequisite software:
-
--   Pandoc version 1.13.2
-
--   Windows PowerShell Community Extensions 3.2.0
-
-Once you sign up for GitHub and install the prerequisite software, the steps for downloading and printing the course-lab materials are the same for each course.
-
-You can use a variety of tools that support Git with GitHub, including Microsoft Visual Studio, Visual Studio Code, or any of the Git command-line tools that are available online.
-
-> **Note:** GitHub has a desktop client and a command-line interface. Throughout this document, we use the desktop client. If GitHub and Git are new concepts, and you would like a more in-depth introduction, refer to the “GitHub [Hello World](https://guides.github.com/activities/hello-world/) guide” at <https://guides.github.com/activities/hello-world/> .
-
-<span id="terminology" class="anchor"><span id="prerequisites" class="anchor"></span></span>Prerequisites
----------------------------------------------------------------------------------------------------------
-
-The following section details the prerequisites for using GitHub and the Microsoft Learning courseware lab solution.
-
-### Signing up for a GitHub account
-
-In order to clone a repo or collaborate with Microsoft Learning on GitHub, you need to sign up for a GitHub account.
-
-To sign up for a GitHub account, perform the following steps.
-
-1.  <span id="to-sign-up-for-a-github-account" class="anchor"></span>In your browser, navigate to <https://GitHub.com/>.
-
-2.  In the **Pick a username** text box, enter a unique user name.
-
-3.  In the **Your email address** text box, enter your email address.
-
-4.  In the **Create a password** text box, enter a password that meets GitHub’s complexity requirements.
-
-5.  Click **Sign up for GitHub**.
-
-6.  In the **Welcome to GitHub** page, make sure that **Unlimited public repositories for free** check box is selected.
-
-7.  Click **Finish sign up**.
-
-GitHub will send a confirmation email to the email address that you provide. You must open the email, and then click **Verify email address**.
-
-### Installing GitHub Desktop
-
-GitHub Desktop provides a graphical user interface (GUI) for GitHub, and you can use it to perform most common functions. There are some operations that you can perform only from a command line, but none of these operations are necessary for downloading and printing lab files.
-
-To install the GitHub Desktop, perform the following steps:
-
-1.  <span id="to-install-github-desktop" class="anchor"></span>In your browser, navigate to <https://desktop.GitHub.com/>.
-
-<!-- -->
-
-1.  Click **Download GitHub Desktop**.
-
-2.  When the **GitHubSetup.exe** file has downloaded, double-click the file to start the setup, or click **Run** if you receive a prompt from Internet Explorer.
-
-3.  In the **Application Install - Security Warning** dialog box, click **Install**.
-
-4.  Close GitHub Desktop.
-
-### Installing Pandoc version 1.13.2
-
-Pandoc is a tool that you can use to convert files from one format to another. It can read many formats, including GFM, and you use it output Microsoft Word's .docx format. Pandoc is the tool behind the scripts that Microsoft Learning provides to create Word documents from the Markdown file format of the lab files. If you do not install Pandoc, the document-creation script fails.
-
-To install Pandoc, perform the following steps:
-
-1.  <span id="to-install-pandox-1.13.2" class="anchor"></span>In your browser, navigate to [https://GitHub.com/jgm/pandoc/releases](https://github.com/jgm/pandoc/releases/tag/1.13.2).
-
-<!-- -->
-
-1.  Scroll to the bottom of the page.
-
-2.  Click **pandoc-1.13.2-windows.msi**.
-
-3.  When the **pandoc-1.13.2-windows.msi** file has downloaded, double-click the file to start the setup, or click **Run** if you receive a prompt from Internet Explorer.
-
-4.  In the **Pandoc 1.13.2 Setup** dialog, review the License Agreement, select **I accept the terms in the License Agreeement**, and then click **Next**.
-
-5.  Click **Finish**.
-
-### Installing PowerShell Community Extensions 3.2.0
-
-PowerShell Community Extensions (PSCX) is an open-source project that extends Windows PowerShell with scripts, cmdlets, functions, and other features. PSCX version 3.2.0 is the most current (as of 6/16/2016) PSCX version. You use PSCX to create the .zip files that contain your .docx files. Please note, if you do not install these extensions, the document-creation script fails.
-
-To install PSCX 3.2.0, perform the following steps:
-
-1.  <span id="to-install-pscx-3.2.0" class="anchor"></span>In your browser, navigate to [http://pscx.codeplex.com/releases](http://pscx.codeplex.com/releases/view/133199).
-
-<!-- -->
-
-1.  Under **RECOMMENDED DOWNLOAD**, click **Pscx-3.2.0.msi**.
-
-2.  When the **Pscx-3.2.0.msi** file has downloaded, double-click the file to start the setup, or click **Run** if you receive a prompt from Internet Explorer.
-
-3.  In the **PowerShell Community Extensions 3.2.0 Setup** dialog box, review the License Agreement, select **I accept the terms in the License Agreeement**, and then click **Install**.
-
-4.  If the **User Account Control** dialog box appears, click **Yes**.
-
-5.  Click **Finish**.
-
-> **Important:** After you install Pandoc and PSCX, you must restart your computer to complete the installation. If you do not restart your computer, the document-creation script might fail.
-
-Downloading and printing lab files
-----------------------------------
-
-The labs are stored on GitHub in a repo. The structure for each Microsoft Learning course repo is similar, and each contains the following folders:
-
-**Allfiles:** This folder contains any supporting files for the labs. This is the same as the Allfiles folder that would appear on the virtual hard disk for virtual machines (VMs).
-
-**Build**: This folder contains the Windows PowerShell script and supporting files for creating Word documents from the lab files that are in the Markdown format.
-
-**Instructions:** This folder contains the lab files and LAK files, which are in the Markdown format.
-
-You need all of these folders if you want to print the lab files.
+The Microsoft Learning team has created a solution that allows them to publish updated lab and lab answer keys (LAKs) and updated lab scripts regularly to GitHub. The solution also includes a script and tools that you can use to print labs and lab answer keys from Microsoft Word .docx files. It is highly recommended that you use the provided Word .docx files instead of building them manually.
 
 ### Downloading the latest materials for course labs
 
-If you want to build Word documents from Markdown files, you must [clone](https://help.github.com/articles/cloning-a-repository/) or fetch a copy of the repo on your local computer. If you want to clone the files, you must know the GitHub location of the course files. You can use the **Search GitHub** search box on the GitHub home page to search for these files by using the course number. You also can browse through the repos under the [Microsoft Learning organization](https://github.com/MicrosoftLearning) page on GitHub. The Microsoft Learning page on GitHub is located at <https://github.com/MicrosoftLearning/>.
+The latest lab instructions and AllFiles compressed folder are always available at the following link: <https://github.com/MicrosoftLearning/20532-DevelopingMicrosoftAzureSolutions/releases/latest>
 
-#### To clone the course repo to your local machine
-
-1.  In your browser, navigate to the online repo in GitHub.
-
-<!-- -->
-
-1.  On the **repo** page, click **Clone or download**.
-
-2.  In the **Clone with HTTPS** dialog box, click **Open in Desktop**.
-
-3.  In the **Internet Explorer** confirmation dialog box, click **Allow** (or the equivalent for your browser).
-
-4.  Switch to GitHub Desktop.
-
-5.  In the **Browse For Folder** dialog box, select a folder as the root for the local repo, and then click **Ok**.
-
-    If you plan to clone several repos, you can choose one common folder in this step. This creates a subfolder for each repo.
-
-6.  In the **Repositories** list, right-click the repository name, and then click **Open in Explorer** to view the local files.
-
-After you clone a repo the first time, on subsequent visits, you can open GitHub Desktop, select the repository, and then click **Sync** to retrieve the latest files.
-
-> **Note:** For more information about synchronizing your repo, refer to Working with your remote repository on GitHub or GitHub Enterprise at <https://help.github.com/desktop/guides/contributing/working-with-your-remote-repository-on-github-or-github-enterprise/>.
-
-### Printing the lab and LAK files
-
-If you want to print lab and LAK files, you must convert them Word documents first. Microsoft Learning has a Windows PowerShell script that automates this task. The script creates the Word documents, and then packages the Word documents into .zip files. At the same time, it creates a .zip file that contains the lab’s supporting files such as scripts and text files, which you will need when you set up your lab environment.
-
-The Windows PowerShell script, Pandoc.ps1, is in the **\\Build** folder. The folder also contains template.docx, which the script uses to format files in Word. Do not alter the template.docx file.
-
-#### To convert the lab files and create the Zip packages:
-
-1.  In **File Explorer,** navigate to the folder in the repo that you cloned, such as
-
-    ..\\Documents\\GitHub\\20532-DevelopingMicrosoftAzureSolutions\\Build.
-
-<!-- -->
-
-1.  Right-click the file **pandoc.ps1**, and then click **Run with PowerShell**.
-
-2.  In the **Windows PowerShell** window, if you receive an **Execution Policy Change** prompt, type **Y**, and then press Enter.
-
-3.  When you receive the **What is the current version?** prompt, enter a short string or number to uniquely identify the .zip files that is built.
-
-> > **Note:** The **current version** string is added to the name of the .zip file.
-
-1.  Switch to File Explorer, and in the **\\Build** folder, select the .zip files that you just were created. The file names will be **allfiles-vversion.zip** and **\*\*lab\_instructions-v\_\_version\_\_.zip\*\***.
-
-2.  Move these files to a new location, so that you can avoid attempting to add them to the repo inadvertently as part of a Pull request.
-
-> **Note:** To avoid receiving the **Execution Policy Change** prompt, you can change the [**Set-ExecutionPolicy**](https://technet.microsoft.com/en-us/library/ee176961.aspx) setting in Windows PowerShell to execute scripts without restriction. After changing the **ExecutionPolicy** property, be aware now scripts that you run have the power to make disruptive things happen to your computer.
-
-#### To print the lab files:
-
--   Open the lab files in Microsoft Word, and then print them by using the Word print functionality.
-
-Receiving update notifications, suggesting changes, and collaborating on projects
----------------------------------------------------------------------------------
+## Receiving update notifications, suggesting changes, and collaborating on projects
 
 You can configure your GitHub experience so that you receive notifications when updates occur to a GitHub repo. There are several ways in which you can sign up for notifications, and many of them relate to the many ways that you can collaborate on a project. To receive notifications, you can:
 
