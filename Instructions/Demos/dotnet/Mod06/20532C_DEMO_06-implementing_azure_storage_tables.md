@@ -2,9 +2,9 @@
 
 # Demo: Implementing Azure Storage Tables
 
-1. On the Start screen, locate and click the **Visual Studio 2017** tile.
+1.  On the Start screen, locate and click the **Visual Studio 2017** tile.
 
-  > **Note:** You might have to use the down arrow to locate the Visual Studio 2017 tile on your Start screen.
+	> **Note:** You might have to use the down arrow to locate the Visual Studio 2017 tile on your Start screen.
 
 1.  On the **File** menu, point to **New,** and then click **Project**.
 
@@ -124,10 +124,10 @@
 
 	```
 	public override string ToString()
-  {
-
-  }
-  ```
+	{
+	
+	}
+	```
 
 1.  Within the **ToString** method, add the following line of code:
 
@@ -215,10 +215,10 @@
 
 	```
 	foreach (Employee hrEmployee in table.ExecuteQuery<Employee>(query))
-  {
-
-  }
-  ```
+	{
+	
+	}
+	```
 
 1.  Within the loop, write the **Employee** object to the Console window, as shown below:
 
@@ -264,7 +264,7 @@
 
 16. In the **Internet Explorer** download dialog box, click **Save**.
 
-  > **Note:** The download of the *Azure Storage Emulator* executable typically takes around five minutes.
+	> **Note:** The download of the *Azure Storage Emulator* executable typically takes around five minutes.
 
 17. Click the **Windows File Explorer** icon in your Taskbar.
 
