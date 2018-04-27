@@ -1,0 +1,21 @@
+title: '20535: Architecting Microsoft Azure Solutions'
+remote_theme: azure-immersion/docs-jekyll-theme
+exclude:
+  - readme.md
+  - CHANGELOG.md
+  - .build/
+  - .circleci/
+  - .guides/
+header_pages:
+  - index.html
+author: Microsoft Learning
+twitter_username: mslearning
+github_username:  MicrosoftLearning
+plugins:
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jemoji
+markdown: kramdown
+kramdown:
+   syntax_highlighter_opts:
+      disable : true
